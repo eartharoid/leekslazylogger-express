@@ -1,0 +1,53 @@
+{
+	"name": "leekslazylogger-express",
+	"version": "0.0.1",
+	"description": "leekslazylogger express.js middleware",
+	"main": "lib/",
+	"funding": "https://github.com/eartharoid/leekslazylogger-express?sponsor=1",
+	"dependencies": {
+		"leekslazylogger": "^2.0.0",
+		"on-finished": "^2.3.0"
+	},
+	"scripts": {
+		"test": "node test/test"
+	},
+	"files": [
+		"lib/"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/eartharoid/leekslazylogger-express.git"
+	},
+	"author": {
+		"name": "eartharoid"
+	},
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/eartharoid/leekslazylogger-express/issues"
+	},
+	"homepage": "https://logger.eartharoid.me/express",
+	"keywords": [
+		"console",
+		"terminal",
+		"log",
+		"logger",
+		"log",
+		"file",
+		"files",
+		"color",
+		"colors",
+		"colour",
+		"colours",
+		"formatting",
+		"ansi-styles",
+		"ansi-colors",
+		"easy-to-use",
+		"lazy",
+		"leeks",
+		"leeks.js",
+		"leekslazylogger",
+		"express",
+		"express.js",
+		"middleware"
+	]
+}
