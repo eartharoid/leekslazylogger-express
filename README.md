@@ -16,6 +16,7 @@ leekslazylogger-express is a logger middleware for express.
 **IMPORTANT:** This is an addon for leekslazylogger. For it to work you must have already installed and set up the logger. This should be one of the first middleware called and must go BEFORE any routes.
 
 ```js
+const express = require('express');
 const Logger = require('leekslazylogger');
 const log = new Logger({
 	name: 'My express server'
