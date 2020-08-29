@@ -17,7 +17,9 @@ leekslazylogger-express is a logger middleware for express.
 
 ```js
 const Logger = require('leekslazylogger');
-const log = new Logger();
+const log = new Logger({
+	name: 'My express server'
+});
 
 const app = express();
 
