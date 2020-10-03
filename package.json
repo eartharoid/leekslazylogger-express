@@ -25,7 +25,7 @@
 	"bugs": {
 		"url": "https://github.com/eartharoid/leekslazylogger-express/issues"
 	},
-	"homepage": "https://logger.eartharoid.me/plugins/express",
+	"homepage": "https://logger.eartharoid.me/extensions/express",
 	"keywords": [
 		"console",
 		"terminal",
