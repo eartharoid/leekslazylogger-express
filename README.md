@@ -10,25 +10,22 @@ leekslazylogger-express is a logger middleware for express.
 
 - Colours :)
 - Status code, route, and time in ms
+- Placeholders
+
 
 ## Getting Started
 
-**IMPORTANT:** This is an addon for leekslazylogger. For it to work you must have already installed and set up the logger. This should be one of the first middleware called and must go BEFORE any routes.
 
 ```js
-const express = require('express');
-const Logger = require('leekslazylogger');
-const log = new Logger({
-	name: 'My express server'
-});
+const ExpressLogger = require('leekslazylogger-express');
+const log = new ExpressLogger();
 
+// require express
+const express = require('express');
 const app = express();
 
-app.use(require('leekslazylogger-express'));
-
-...
-
-// other middleware and router
+// use logger middleware
+app.use(log.express);
 ```
 
 ## Support
