@@ -12,7 +12,6 @@ leekslazylogger-express is a logger middleware for express.
 - Status code, route, and time in ms
 - Placeholders
 
-
 ## Getting Started
 
 [**Click here to go the docs for customisation instructions.**](https://logger.eartharoid.me/extensions/express/)

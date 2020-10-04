@@ -1,6 +1,6 @@
 {
 	"name": "leekslazylogger-express",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"description": "leekslazylogger express.js middleware",
 	"main": "lib/",
 	"funding": "https://github.com/eartharoid/leekslazylogger-express?sponsor=1",
