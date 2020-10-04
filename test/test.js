@@ -11,7 +11,11 @@ const log = new Logger({
 
 app.use(log.express); // logger
 
-app.get('*', (req, res) => {
+app.get('/', (req, res) => {
+	res.send(log.options);
+});
+
+app.get('/:page', (req, res) => {
 	res.send(log.options);
 });
 
