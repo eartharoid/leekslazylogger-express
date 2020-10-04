@@ -15,6 +15,7 @@ leekslazylogger-express is a logger middleware for express.
 
 ## Getting Started
 
+[**Click here to go the docs for customisation instructions.**](https://logger.eartharoid.me/extensions/express/)
 
 ```js
 const ExpressLogger = require('leekslazylogger-express');
@@ -30,7 +31,7 @@ app.use(log.express);
 
 ## Support
 
-**[Go to the wiki](https://logger.eartharoid.me)**, or ask for help in [#support](https://discordapp.com/channels/451745464480432129/475351519516950548) on [Discord](https://discord.gg/pXc9vyC).
+**[Go to the wiki](https://logger.eartharoid.me/extensions/express/)**, or ask for help in [#support](https://discordapp.com/channels/451745464480432129/475351519516950548) on [Discord](https://discord.gg/pXc9vyC).
 
 [![Discord](https://discordapp.com/api/guilds/451745464480432129/widget.png?style=banner4)](https://discord.gg/pXc9vyC)
 
