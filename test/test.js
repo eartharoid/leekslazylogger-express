@@ -16,7 +16,9 @@ app.get('/', (req, res) => {
 });
 
 app.get('/:page', (req, res) => {
-	res.send(log.options);
+	res.send({
+		status: '200 OK'
+	});
 });
 
 app.listen(port, () => {
