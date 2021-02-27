@@ -6,7 +6,7 @@ const Logger = require('../lib');
 const log = new Logger({
 	express: {
 		format: '{method} {protocol} &7{path} &6{route} {status-colour}{status} {time-color}({time})',
-		type: 'warn'
+		level: 'warn'
 	}
 });
 
