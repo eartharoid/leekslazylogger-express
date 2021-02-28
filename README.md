@@ -25,12 +25,12 @@ const express = require('express');
 const app = express();
 
 // use logger middleware
-app.use(log.express);
+app.use(log.express(options));
 ```
 
 ## Support
 
-**[Go to the wiki](https://logger.eartharoid.me/extensions/express/)**, or ask for help in [#support](https://discordapp.com/channels/451745464480432129/475351519516950548) on [Discord](https://discord.gg/pXc9vyC).
+**[Go to the docs](https://logger.eartharoid.me/extensions/express/)**, or ask for help in [#general-support](https://discord.com/channels/451745464480432129/475351519516950548) on [Discord](https://discord.gg/pXc9vyC).
 
 [![Discord](https://discordapp.com/api/guilds/451745464480432129/widget.png?style=banner4)](https://discord.gg/pXc9vyC)
 
