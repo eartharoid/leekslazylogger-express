@@ -1,27 +1,44 @@
 const express = require('express');
-const app = express();
-const port = 3000;
+const app1 = express();
+const app2 = express();
 
 const Logger = require('../lib');
 const log = new Logger({
-	express: {
-		format: '{method} {protocol} &7{path} &6{route} {status-colour}{status} {time-color}({time})',
-		level: 'warn'
+	name: 'Express test',
+	levels: {
+		http: {
+			format: '[{timestamp} | INFO] [HTTP] {text}'
+		}
 	}
 });
 
-app.use(log.express); // logger
+app1.use(log.express()); // logger
+app2.use(log.express({
+	format: 'TWO {method} {protocol} &7{path} &6{route} {status-colour}{status} {time-color}({time})',
+	level: 'http'
+})); // logger
 
-app.get('/', (req, res) => {
+app1.get('/', (req, res) => {
+	res.send(log.options);
+});
+app2.get('/', (req, res) => {
 	res.send(log.options);
 });
 
-app.get('/:page', (req, res) => {
+app1.get('/:page', (req, res) => {
+	res.send({
+		status: '200 OK'
+	});
+});
+app2.get('/:page', (req, res) => {
 	res.send({
 		status: '200 OK'
 	});
 });
 
-app.listen(port, () => {
-	log.info(`Example app listening at http://localhost:${port}`);
+app1.listen(3000, () => {
+	log.info('Example app 1 listening at http://localhost:3000');
+});
+app2.listen(3001, () => {
+	log.info('Example app 2 listening at http://localhost:3001');
 });

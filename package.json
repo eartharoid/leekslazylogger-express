@@ -1,11 +1,11 @@
 {
 	"name": "leekslazylogger-express",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"description": "leekslazylogger express.js middleware",
 	"main": "lib/",
 	"funding": "https://github.com/eartharoid/leekslazylogger-express?sponsor=1",
 	"dependencies": {
-		"leekslazylogger": "3.0.0",
+		"leekslazylogger": "^3.0.1",
 		"on-finished": "^2.3.0"
 	},
 	"scripts": {
@@ -32,15 +32,11 @@
 		"log",
 		"logger",
 		"log",
-		"file",
-		"files",
 		"color",
 		"colors",
 		"colour",
 		"colours",
 		"formatting",
-		"ansi-styles",
-		"ansi-colors",
 		"easy-to-use",
 		"leeks",
 		"leeks.js",
