@@ -2,6 +2,9 @@ const express = require('express');
 const app1 = express();
 const app2 = express();
 
+const requestIp = require('request-ip');
+app2.use(requestIp.mw());
+
 const Logger = require('../lib');
 const log = new Logger({
 	name: 'Express test',
@@ -14,7 +17,7 @@ const log = new Logger({
 
 app1.use(log.express()); // logger
 app2.use(log.express({
-	format: 'TWO {method} {protocol} &7{path} &6{route} {status-colour}{status} {time-color}({time})',
+	format: req => `TWO {method} ${req.clientIp} {protocol} &7{path} &6{route} {status-colour}{status} {time-color}({time})`,
 	level: 'http'
 })); // logger
 
