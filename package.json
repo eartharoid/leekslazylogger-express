@@ -5,7 +5,7 @@
 	"main": "lib/",
 	"funding": "https://github.com/eartharoid/leekslazylogger-express?sponsor=1",
 	"dependencies": {
-		"leekslazylogger": "^3.0.1",
+		"leekslazylogger": "^3.0.2",
 		"on-finished": "^2.3.0"
 	},
 	"scripts": {
